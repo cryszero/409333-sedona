@@ -7,11 +7,11 @@
 </head>
 
 <body>
-  <header class="main-header">
+  <header class="container">
     <nav class="main-navigation">
-      <a class="header-logo" href="index.html"><img src="http://placehold.it/138x70"
+      <a class="banner-link" href="index.html"><img src="http://placehold.it/138x70"
         alt="Sedona-logo" width="138" height="70"></a>
-      <ul class="website-navigation">
+      <ul class="navigation-list">
         <li class="left-nav"><a href="index.html">информация</a></li>
         <li class="left-nav"><a href="#">фото и видео</a></li>
         <li class="right-nav"><a href="#">карта штата</a></li>
@@ -19,73 +19,88 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="container">
     <!-- <form class="" action="/echo" method="post">
     </form> -->
-    <section class="hotel-results">
-      <section class="sorting-controls">
-        <h2>найдено: 3</h2>
-        <ul class="sorting-types">
-          <li><span>по цене</span></li>
-          <li><span>по типу</span></li>
-          <li><span>по рейтингу</span></li>
-        </ul>
-        <div class="upwards-downwards">
-          <span>up</span>
-          <span>down</span>
-        </div>
-      </section>
-      <section class="hotel-list">
-        <div class="hotel-piece">
+    <section class="sorting-controls">
+      <h2>найдено: 3</h2>
+      <ul class="hotel-sorting">
+        <li class="left-side"><a>по цене</a></li>
+        <li class="left-side"><a>по типу</a></li>
+        <li class="left-side"><a>по рейтингу</a></li>
+        <li class="right-side"><a>up</a></li>
+        <li class="right-side"><a>down</a></li>
+      </ul>
+    </section>
+    <section class="hotel-list">
+      <div class="hotel-item">
+        <div class="hotel-photo">
           <img src="http://placehold.it/135x90" alt="" width="135" height="90">
-          <div class="general-description">
-            <h2>amara resort &amp; spa</h2>
-            <p>гостиница от 4000 р.</p>
-            <a href="#">подробнее</a>
-            <a href="#">забронировать</a>
-          </div>
-          <div class="hotel-rating">
-            <span>*****</span>
-            <span>рейтинг 8,5</span>
-          </div>
         </div>
-        <div class="hotel-piece">
+        <div class="hotel-description">
+          <a class="hotel-link" href="#"><h3>amara resort &amp; spa</h3></a>
+          <p>гостиница от 4000 р.</p>
+          <a class="more-info btn" href="#">подробнее</a>
+          <a class="reserve btn" href="#">забронировать</a>
+        </div>
+        <div class="hotel-rating">
+          <ul class="star-rating">
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+          </ul>
+          <span>рейтинг 8,5</span>
+        </div>
+      </div>
+      <div class="hotel-item">
+        <div class="hotel-photo">
           <img src="http://placehold.it/135x90" alt="" width="135" height="90">
-          <div class="general-description">
-            <h2>desert quail inn</h2>
-            <p>мотель от 3000 р.</p>
-            <a href="#">подробнее</a>
-            <a href="#">забронировать</a>
-          </div>
-          <div class="hotel-rating">
-            <span>***</span>
-            <span>рейтинг 8,9</span>
-          </div>
         </div>
-        <div class="hotel-piece">
+        <div class="hotel-description">
+          <a class="hotel-link" href="#"><h3>desert quail inn</h3></a>
+          <p>мотель от 3000 р.</p>
+          <a class="more-info btn" href="#">подробнее</a>
+          <a class="reserve btn" href="#">забронировать</a>
+        </div>
+        <div class="hotel-rating">
+          <ul class="star-rating">
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+          </ul>
+          <span>рейтинг 8,9</span>
+        </div>
+      </div>
+      <div class="hotel-item">
+        <div class="hotel-photo">
           <img src="http://placehold.it/135x90" alt="" width="135" height="90">
-          <div class="general-description">
-            <h2>villas at polo diablo</h2>
-            <p>апартаменты от 2000 р.</p>
-            <a href="#">подробнее</a>
-            <a href="#">забронировать</a>
-          </div>
-          <div class="hotel-rating">
-            <span>**</span>
-            <span>рейтинг 9,2</span>
-          </div>
         </div>
-      </section>
+        <div class="hotel-description">
+          <a class="hotel-link" href="#"></a>
+          <h3>villas at polo diablo</h3></a>
+          <p>апартаменты от 2000 р.</p>
+          <a class="more-info btn" href="#">подробнее</a>
+          <a class="reserve btn" href="#">забронировать</a>
+        </div>
+        <div class="hotel-rating">
+          <ul class="star-rating">
+            <li>*</li>
+            <li>*</li>
+          </ul>
+          <span>рейтинг 9,2</span>
+        </div>
+      </div>
     </section>
   </main>
-  <footer class="main-footer">
-    <p>#VISITSEDONA</p>
+  <footer class="container">
+    <p class="hashtag">#VISITSEDONA</p>
     <ul class="social-contacts">
       <li><a href="#">vk</a></li>
       <li><a href="#">fb</a></li>
       <li><a href="#">yt</a></li>
     </ul>
-    <p>website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img
+    <p class="copyright">website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img
       src="http://placehold.it/115x41" alt="htmlacademy link" width="115" height="41"></a></p>
   </footer>
 </body>
