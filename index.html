@@ -9,7 +9,8 @@
 <body class="container">
   <header class="header">
     <nav class="navigation">
-      <a class="header-logo"><img src="img/header-logo.png" alt="Sedona-logo" width="138" height="70"></a>
+      <a class="header-logo"><img src="img/header-logo.png" alt="Sedona-logo"
+         width="138" height="70" alt="логотип сайта седона"></a>
       <ul class="navigation-list">
         <li class="left-nav"><a>информация</a></li>
         <li class="left-nav"><a href="#">фото и видео</a></li>
@@ -34,29 +35,29 @@
         <p class="advantage-clarification">седона — не аттракцион для туристов, там течёт своя жизнь</p>
       </div>
       <div class="advantage-image">
-        <img src="img/city-photo.jpg" alt="Городок Седона" width="800" height="256">
+        <img src="img/city-photo.jpg" alt="фотография городка седоны" width="800" height="256">
       </div>
     </div>
     <ul class="small-features">
       <li class="feature-item">
-        <img src="img/lodging-icon.svg" alt="Жильё" width="75" height="72">
+        <!-- <img src="img/lodging-icon.svg" alt="Жильё" width="75" height="72"> -->
         <p class="feature-title">жилье</p>
         <p class="feature-clarification">рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
       </li>
       <li class="feature-item">
-        <img src="img/food-icon.svg" alt="Еда" width="74" height="70">
+        <!-- <img src="img/food-icon.svg" alt="Еда" width="74" height="70"> -->
         <p class="feature-title">еда</p>
         <p class="feature-clarification">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
       </li>
       <li class="feature-item">
-        <img src="img/souvenirs-icon.svg" alt="Сувениры" width="63" height="76">
+        <!-- <img src="img/souvenirs-icon.svg" alt="Сувениры" width="63" height="76"> -->
         <p class="feature-title">сувениры</p>
         <p class="feature clarification">не только китайского, но и местного производства!</p>
       </li>
     </ul>
     <div class="advantage">
       <div class="advantage-image">
-        <img src="img/canyon-photo.jpg" alt="Мост Дьявола" width="800" height="256">
+        <img src="img/canyon-photo.jpg" alt="фотография моста дьявола" width="800" height="256">
       </div>
       <div class="advantage-description">
         <p class="advantage-title">там есть мост дьявола</p>
@@ -84,24 +85,52 @@
     <section class="hotel-offers">
       <h2>заинтересовались?</h2>
       <p class="advantage-clarification">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button type="button" name="button">поиск гостиницы в седоне</button>
-      <form class="search-form" action="index.html" method="post">
-        <button type="button" name="button">найти</button>
+      <button class="btn form-call" type="button" name="button">поиск гостиницы в седоне</button>
+      <form class="search-form" action="http://echo.htmlacademy.ru" method="post">
+        <p class="travel-item">
+        <label>
+          дата заезда:
+          <input type="text" name="arrival-date" value="24 апреля 2017" placeholder="дд.мм.ггг">
+          <button type="button" name="calendar-icon" title="выбор даты заезда"></button>
+        </label>
+        </p>
+        <p class="travel-item">
+        <label>
+          дата выезда:
+          <input type="text" name="departure-date" value="4 июля 2017" placeholder="дд.мм.ггг">
+          <button type="button" name="calendar-icon" title="выбор даты выезда"></button>
+        </label>
+        </p>
+        <p class="travel-item">
+          <label>взрослые:
+          <button class="btn minus-button" type="button" name="adults-down" title="уменьшить количество взрослых">-</button>
+          <input type="number" name="adults" value="2">
+          <button class="btn plus-button" type="button" name="adults-up" title="увеличить количество взрослых">+</button>
+          </label>
+        </p>
+        <p class="travel-item">
+          <label>дети:
+          <button class="btn minus-button"type="button" name="kids-down" title="уменьшить количество детей">-</button>
+          <input type="number" name="kids" value="0">
+          <button class="btn plus-button" type="button" name="kids-up" title="увеличить количество детей">+</button>
+          </label>
+        </p>
+        <button class="btn search-submit" type="submit">найти</button>
       </form>
     </section>
     <div class="map-container">
-      <img src="img/map.jpg" alt="Карта отелей" width="1200" height="593">
+      <img src="img/map.jpg" alt="карта отелей" width="1200" height="593">
     </div>
   </main>
   <footer class="footer">
     <p class="hashtag">#VISITSEDONA</p>
     <ul class="social-contacts">
       <li><a class="social-link" href="#">vk</a></li>
-      <li><a class="social-link" href="#">fb</a></li>
-      <li><a class="social-link" href="#">yt</a></li>
+      <li><a class="social-link" href="#">facebook</a></li>
+      <li><a class="social-link" href="#">YouTube</a></li>
     </ul>
     <p class="copyright">website by <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmlacademy.svg" alt="htmlacademy link" width="115" height="41"></a></p>
+        <img src="img/logo-htmlacademy.svg" alt="ссылка на сайт htmlacademy.ru" width="115" height="41"></a></p>
   </footer>
 </body>
 
