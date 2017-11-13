@@ -12,7 +12,7 @@
       <a class="header-logo"><img src="img/header-logo.png" alt="Sedona-logo"
          width="138" height="70" alt="логотип сайта седона"></a>
       <ul class="navigation-list">
-        <li class="left-nav"><a>информация</a></li>
+        <li class="left-nav"><a href="#">информация</a></li>
         <li class="left-nav"><a href="#">фото и видео</a></li>
         <li class="right-nav"><a href="#">карта штата</a></li>
         <li class="right-nav"><a href="hotels.html">гостиницы</a></li>
@@ -40,19 +40,16 @@
     </div>
     <ul class="small-features">
       <li class="feature-item">
-        <!-- <img src="img/lodging-icon.svg" alt="Жильё" width="75" height="72"> -->
         <p class="feature-title">жилье</p>
         <p class="feature-clarification">рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
       </li>
       <li class="feature-item">
-        <!-- <img src="img/food-icon.svg" alt="Еда" width="74" height="70"> -->
         <p class="feature-title">еда</p>
         <p class="feature-clarification">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
       </li>
       <li class="feature-item">
-        <!-- <img src="img/souvenirs-icon.svg" alt="Сувениры" width="63" height="76"> -->
         <p class="feature-title">сувениры</p>
-        <p class="feature clarification">не только китайского, но и местного производства!</p>
+        <p class="feature-clarification">не только китайского, но и местного производства!</p>
       </li>
     </ul>
     <div class="advantage">
@@ -87,32 +84,32 @@
       <p class="advantage-clarification">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <button class="btn form-call" type="button" name="button">поиск гостиницы в седоне</button>
       <form class="search-form" action="http://echo.htmlacademy.ru" method="post">
-        <p class="travel-item">
+        <p class="search-item">
         <label>
           дата заезда:
           <input type="text" name="arrival-date" value="24 апреля 2017" placeholder="дд.мм.ггг">
-          <button type="button" name="calendar-icon" title="выбор даты заезда"></button>
+          <button type="button" name="calendar-icon" aria-label="выбор даты заезда"></button>
         </label>
         </p>
-        <p class="travel-item">
+        <p class="search-item">
         <label>
           дата выезда:
           <input type="text" name="departure-date" value="4 июля 2017" placeholder="дд.мм.ггг">
-          <button type="button" name="calendar-icon" title="выбор даты выезда"></button>
+          <button type="button" name="calendar-icon" aria-label="выбор даты выезда"></button>
         </label>
         </p>
-        <p class="travel-item">
+        <p class="search-item">
           <label>взрослые:
-          <button class="btn minus-button" type="button" name="adults-down" title="уменьшить количество взрослых">-</button>
+          <button class="btn minus-button" type="button" name="adults-down" aria-label="уменьшить количество взрослых">-</button>
           <input type="number" name="adults" value="2">
-          <button class="btn plus-button" type="button" name="adults-up" title="увеличить количество взрослых">+</button>
+          <button class="btn plus-button" type="button" name="adults-up" aria-label="увеличить количество взрослых">+</button>
           </label>
         </p>
-        <p class="travel-item">
+        <p class="search-item">
           <label>дети:
-          <button class="btn minus-button"type="button" name="kids-down" title="уменьшить количество детей">-</button>
+          <button class="btn minus-button"type="button" name="kids-down" aria-label="уменьшить количество детей">-</button>
           <input type="number" name="kids" value="0">
-          <button class="btn plus-button" type="button" name="kids-up" title="увеличить количество детей">+</button>
+          <button class="btn plus-button" type="button" name="kids-up" aria-label="увеличить количество детей">+</button>
           </label>
         </p>
         <button class="btn search-submit" type="submit">найти</button>

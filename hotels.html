@@ -24,30 +24,30 @@
       <fieldset class="features-selection">
         <legend>Инфраструктура:</legend>
         <p class="feature-item"><label>
-          <input type="checkbox" name="pool" value="true">
+          <input type="checkbox" name="pool">
           бассейн
         </label></p>
         <p class="feature-item"><label>
-          <input type="checkbox" name="parking" value="true">
+          <input type="checkbox" name="parking">
           парковка
         </label></p>
         <p class="feature-item"><label>
-          <input type="checkbox" name="wi-fi" value="true">
+          <input type="checkbox" name="wi-fi">
           wi-fi
         </label></p>
       </fieldset>
       <fieldset class="features-selection">
         <legend>тип жилья:</legend>
         <p class="feature-item"><label>
-          <input type="checkbox" name="hotel" value="true">
+          <input type="checkbox" name="hotel">
           гостиница
         </label></p>
         <p class="feature-item"><label>
-          <input type="checkbox" name="motel" value="true">
+          <input type="checkbox" name="motel">
           мотель
         </label></p>
         <p class="feature-item"><label>
-          <input type="checkbox" name="apartments" value="true">
+          <input type="checkbox" name="apartments">
           апартаменты
         </label></p>
       </fieldset>
@@ -56,15 +56,21 @@
         <p class="price-from-upto">
           <label>
             от
-            <output name="cost-from">0</output>
+            <input type="number" name="cost-from">
           </label>
           <label>
             до
-            <output name="cost-upto">0</output>
+            <input type="number" name="cost-upto">
           </label>
         </p>
-        <!--Здесь должно быть нечто вроде кастомного input[type=range] на JS-->
-        <button class="btn hotel-search-submit" type="submit" name="button">показать</button>
+        <input class="cost-range" type="range" name="cost-range">
+        <div class="slider-head" tabindex="0">
+          *
+        </div>
+        <div class="slider-head" tabindex="0">
+          *
+        </div>
+        <button class="btn hotel-search-submit" type="submit">показать</button>
       </fieldset>
     </form>
     <section class="sorting-controls">
@@ -81,7 +87,7 @@
     <section class="hotel-list">
       <div class="hotel-item">
         <div class="hotel-photo">
-          <img src="img/amara-resort.jpg" alt="" width="135" height="90" alt="фотография amara resort &amp; spa">
+          <img src="img/amara-resort.jpg" alt="" width="135" height="90" alt="фотография amara resort and spa">
         </div>
         <div class="hotel-description">
           <a class="hotel-link" href="#"><h3>amara resort &amp; spa</h3></a>
