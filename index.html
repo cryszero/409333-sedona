@@ -7,10 +7,10 @@
 </head>
 
 <body class="container">
+
   <header class="header">
     <nav class="navigation">
-      <a class="header-logo"><img src="img/header-logo.png" alt="Sedona-logo"
-         width="138" height="70" alt="логотип сайта седона"></a>
+      <a href="index.html" class="header-logo"><img src="img/header-logo.png" alt="логотип сайта седона" width="138" height="70"></a>
       <ul class="navigation-list">
         <li class="left-nav"><a href="#">информация</a></li>
         <li class="left-nav"><a href="#">фото и видео</a></li>
@@ -19,10 +19,10 @@
       </ul>
     </nav>
   </header>
+
   <main>
     <div class="banner">
-      <img src="img/banner.png" alt="Welcome to the gorgeous Sedona
-        'Because the Grand Canyon sucks!'" width="458" height="352">
+      <img src="img/banner.png" alt="Welcome to the gorgeous Sedona 'Because the Grand Canyon sucks!'" width="458" height="352">
     </div>
     <section class="short-introduction">
       <h1 class="feature-title">седона — небольшой городок в аризоне, заслуживающий большего!</h1>
@@ -80,37 +80,31 @@
       </li>
     </ul>
     <section class="hotel-offers">
-      <h2>заинтересовались?</h2>
-      <p class="advantage-clarification">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button class="btn form-call" type="button" name="button">поиск гостиницы в седоне</button>
+      <p class="hotel-offers-title">заинтересовались?</p>
+      <p class="hotel-offers-clarification">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <button class="btn form-call" type="button">поиск гостиницы в седоне</button>
       <form class="search-form" action="http://echo.htmlacademy.ru" method="post">
         <p class="search-item">
-        <label>
-          дата заезда:
-          <input type="text" name="arrival-date" value="24 апреля 2017" placeholder="дд.мм.ггг">
-          <button type="button" name="calendar-icon" aria-label="выбор даты заезда"></button>
-        </label>
+          <label for="arrival-date">дата заезда:</label>
+            <input id="arrival-date" type="text" name="arrival-date" value="24 апреля 2017" placeholder="дд.мм.ггг">
+            <button type="button" name="calendar-icon" aria-label="выбор даты заезда"></button>
         </p>
         <p class="search-item">
-        <label>
-          дата выезда:
-          <input type="text" name="departure-date" value="4 июля 2017" placeholder="дд.мм.ггг">
-          <button type="button" name="calendar-icon" aria-label="выбор даты выезда"></button>
-        </label>
+          <label for="departure-date">дата выезда:</label>
+            <input id="departure-date" type="text" name="departure-date" value="4 июля 2017" placeholder="дд.мм.ггг">
+            <button type="button" name="calendar-icon" aria-label="выбор даты выезда"></button>
         </p>
         <p class="search-item">
-          <label>взрослые:
+          <label for="adults-input">взрослые:</label>
           <button class="btn minus-button" type="button" name="adults-down" aria-label="уменьшить количество взрослых">-</button>
-          <input type="number" name="adults" value="2">
+          <input id="adults-input" type="text" name="adults" value="2">
           <button class="btn plus-button" type="button" name="adults-up" aria-label="увеличить количество взрослых">+</button>
-          </label>
         </p>
         <p class="search-item">
-          <label>дети:
-          <button class="btn minus-button"type="button" name="kids-down" aria-label="уменьшить количество детей">-</button>
-          <input type="number" name="kids" value="0">
-          <button class="btn plus-button" type="button" name="kids-up" aria-label="увеличить количество детей">+</button>
-          </label>
+          <label for="kids-input">дети:</label>
+            <button class="btn minus-button"type="button" name="kids-down" aria-label="уменьшить количество детей">-</button>
+            <input id="kids-input" type="text" name="kids" value="0">
+            <button class="btn plus-button" type="button" name="kids-up" aria-label="увеличить количество детей">+</button>
         </p>
         <button class="btn search-submit" type="submit">найти</button>
       </form>
@@ -119,15 +113,15 @@
       <img src="img/map.jpg" alt="карта отелей" width="1200" height="593">
     </div>
   </main>
+
   <footer class="footer">
     <p class="hashtag">#VISITSEDONA</p>
     <ul class="social-contacts">
-      <li><a class="social-link" href="#">vk</a></li>
-      <li><a class="social-link" href="#">facebook</a></li>
-      <li><a class="social-link" href="#">YouTube</a></li>
+      <li><a href="#" class="social-link" aria-label="vk"></a></li>
+      <li><a href="#" class="social-link" aria-label="facebook"></a></li>
+      <li><a href="#" class="social-link" aria-label="YouTube"></a></li>
     </ul>
-    <p class="copyright">website by <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmlacademy.svg" alt="ссылка на сайт htmlacademy.ru" width="115" height="41"></a></p>
+    <p class="copyright">website by <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright-link"><img src="img/logo-htmlacademy.svg" alt="ссылка на сайт htmlacademy.ru" width="115" height="41"></a></p>
   </footer>
 </body>
 
