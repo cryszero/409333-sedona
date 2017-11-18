@@ -16,6 +16,7 @@ body {
 .container {
 	margin: 0 auto;
 	width: 1200px;
+	min-width: 768px;
 }
 
 a {
@@ -52,22 +53,34 @@ a {
 /*---------------------------*/
 /*Отрисовка баннера на главной*/
 .banner {
+	position: relative;
 	min-height: 508px;
-	width: inherit;
 
-	background-image: url(../img/banner-background.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+	background: url(../img/banner-background.jpg) no-repeat;
+}
+
+.banner::after {
+	content: url(../img/banner-background-mask.png);
+	position: absolute;
+	bottom: -8px;
+	left: 0;
 }
 
 .banner img {
-	margin-left: auto;
-	margin-right: auto;
+	display: block;
+	margin: 0 auto;
+	padding-top: 75px;
 }
 /*---------------------------*/
-/*Главные информационные блооки на странице*/
+
 .short-introduction {
 	text-align: center;
+}
+
+/*Главные информационные блооки на странице*/
+.advantage {
+	display: flex;
+	align-items: flex-start;
 }
 
 .advantage-title,
@@ -84,7 +97,8 @@ a {
 
 .advantage-description {
 	min-height: 256px;
-	width: 33%;
+	flex-basis: 33%;
+	flex-grow: 1;
 
 	color: #fff;
 	text-align: center;
@@ -101,12 +115,14 @@ a {
 }
 
 .advantage-image {
-	width: 66%;
+	flex-basis: 66%;
+	flex-grow: 1;
 }
 
 .small-features {
 	margin: 0;
 	padding: 0;
+	display: flex;
 
 	list-style: none;
 }
@@ -115,6 +131,18 @@ a {
 	width: 33%;
 
 	text-align: center;
+}
+
+.svg-type:nth-child(1)::before {
+	content: url(../img/lodging-icon.svg);
+}
+
+.svg-type:nth-child(2)::before {
+	content: url(../img/food-icon.svg);
+}
+
+.svg-type:nth-child(3)::before {
+	content: url(../img/souvenirs-icon.svg);
 }
 
 .gray-background {
@@ -246,24 +274,6 @@ a {
 	background: #81b3d2;
 }
 
-li:nth-child(1) .social-link {
-	background-image: url(../img/twitter-icon.svg);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-li:nth-child(2) .social-link {
-	background-image: url(../img/fb-icon.svg);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-li:nth-child(3) .social-link {
-	background-image: url(../img/yt-icon.svg);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
 .social-link:hover,
 .social-link:focus {
 	color: #000;
@@ -272,7 +282,6 @@ li:nth-child(3) .social-link {
 
 .social-link:active {
 	color: #88b6d1;
-
 	background-color: #5496bd;
 }
 
