@@ -86,23 +86,12 @@ a {
 /*Отрисовка баннера на главной*/
 
 .banner {
-	position: relative;
   min-height: 508px;
   margin-bottom: 58px;
 
-  background:  url(../img/banner-background.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 22%;
-}
-
-.banner::after {
-	content: "";
-	position: absolute;
-	top: 451px;
-	left: 0;
-	min-width: 100%;
-	min-height: 100%;
-	background: url(../img/banner-background-mask.png) no-repeat;
+  background: url(../img/banner-background-mask.png), url(../img/banner-background.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, 50% 22%;
 }
 
 .banner img {
@@ -905,7 +894,6 @@ li:nth-child(3) .social-link::before {
 .hotel-rating span {
   font-weight: normal;
   line-height: 21px;
-  padding: ;
 
   color: #666;
   background: #f2f2f2;
