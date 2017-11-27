@@ -58,14 +58,15 @@
       <fieldset class="price-selection">
         <legend>стоимость в сутки (р):</legend>
         <p class="price-from-upto">
-          <label class="label-from" for="cost-from">от</label>
-          <input id="cost-from" type="text" name="cost-from">
-          <label class="label-upto" for="cost-upto">до</label>
-          <input id="cost-upto" type="text" name="cost-upto">
+          <label class="label-from">от <input type="text" name="cost-from" pattern=[0-9]></label>
+          <label class="label-upto">до <input type="text" name="cost-upto" pattern="[0-9]"></label>
         </p>
         <div class="cost-range">
-          <button class="slider-head" type="button"></button>
-          <button class="slider-head" type="button"></button>
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="slider-head range-min" aria-label="ползунок минимальной цены" tabindex="0"></div>
+          <div class="slider-head range-max" aria-label="ползунок максимальной цены" tabindex="0"></div>
         </div>
         <button class="btn hotel-search-submit" type="submit">показать</button>
       </fieldset>
@@ -77,8 +78,8 @@
         <li class="left-side"><button class="sorting-button active" type="button">по цене</button></li>
         <li class="left-side"><button class="sorting-button" type="button">по типу</button></li>
         <li class="left-side"><button class="sorting-button" type="button">по рейтингу</button></li>
-        <li class="right-side"><button class="sorting-button button-up" type="button" title="снизу вверх">up</button></li>
-        <li class="right-side"><button class="sorting-button button-down active" type="button" title="сверху вниз">down</button></li>
+        <li class="right-side"><button class="sorting-button button-up" type="button" title="снизу вверх"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></button></li>
+        <li class="right-side"><button class="sorting-button button-down active" type="button" title="сверху вниз"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></button></li>
       </ul>
     </section>
     <section class="hotel-list">
@@ -94,10 +95,10 @@
         </div>
         <div class="hotel-rating">
           <ul class="star-rating" title="4 звезды">
-            <li>*</li>
-            <li>*</li>
-            <li>*</li>
-            <li>*</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
           </ul>
           <span>рейтинг 8,5</span>
         </div>
@@ -114,9 +115,9 @@
         </div>
         <div class="hotel-rating">
           <ul class="star-rating" title="3 звезды">
-            <li>*</li>
-            <li>*</li>
-            <li>*</li>
+            <li></li>
+            <li></li>
+            <li></li>
           </ul>
           <span>рейтинг 8,9</span>
         </div>
@@ -133,8 +134,8 @@
         </div>
         <div class="hotel-rating">
           <ul class="star-rating" title="2 звезды">
-            <li>*</li>
-            <li>*</li>
+            <li></li>
+            <li></li>
           </ul>
           <span>рейтинг 9,2</span>
         </div>
