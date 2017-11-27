@@ -696,39 +696,24 @@ li:nth-child(3) .social-link::before {
 .feature-item label::before {
   display: inline-block;
 
-  box-sizing: border-box;
-  width: 23px;
+  width: 27px;
   height: 23px;
-  margin-right: 5px;
+  margin-right: 13px;
 
   content: '';
-  vertical-align: text-top;
 
-  border: 2px solid #fff;
-  border-radius: 3px;
+  background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;
 }
 
-input[type='checkbox']:checked + label::after {
-  position: absolute;
-  top: 5px;
-  left: 6px;
-
-  width: 15px;
-  height: 5px;
-
-  content: '';
-  /*box-shadow: 0 1px 0 0 rgba(102, 141, 182, 1),	
-							inset 0 -1px 0 0 rgba(102, 141, 182, 1);*/
-  transform: rotate(-45deg);
-
-  border-bottom: 4px solid #fff;
-  border-left: 4px solid #fff;
+input[type='checkbox']:checked + label::before {
+  background-image: url(../img/checkbox-on.svg);
 }
 
-input[type='checkbox']:disabled + label::before,
-input[type='checkbox']:disabled + label::after {
-  border-color: #6a6a6a;
+input[type='checkbox']:disabled + label::before {
+  opacity: .5;
 }
+
 
 .price-from-upto {
   font-size: 0;
