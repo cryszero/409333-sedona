@@ -168,6 +168,10 @@ a {
   margin-bottom: 25px;
 }
 
+.advantage-title {
+	max-width: 151px;
+}
+
 .advantage-title + span {
 	display: block;
 	margin-bottom: 21px;
