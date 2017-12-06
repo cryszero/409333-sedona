@@ -134,10 +134,6 @@ a {
   margin-bottom: 27px;
 }
 
-.short-introduction .feature-clarification {
-  width: 287px;
-}
-
 /*Главные информационные блоки на странице*/
 
 .advantage {
@@ -211,6 +207,8 @@ a {
   overflow: hidden;
 
   width: 66.666666%;
+
+  background: #81b3d2;
 }
 
 .advantage-image img {
@@ -1037,20 +1035,16 @@ input[type="checkbox"]:focus + label::before {
 
 .hotel-search-submit {
   font: inherit;
-  font-size: 14px;
   font-weight: normal;
   line-height: 21px;
 
   display: block;
   text-align: center;
 
-  width: 137px;
   margin-right: 97px;
   margin-left: auto;
   padding: 6px 0;
   width: 133px;
-
-  text-transform: uppercase;
 
   border: 2px solid #fff;
   background-color: transparent;
@@ -1115,6 +1109,7 @@ input[type="checkbox"]:focus + label::before {
   font-weight: normal;
   line-height: 18px;
 
+  box-sizing: border-box;
   padding: 0;
 
   cursor: pointer;
@@ -1127,6 +1122,7 @@ input[type="checkbox"]:focus + label::before {
 }
 
 /*Патч для Firefox и IE11, дабы надпись на кнопке не скакала при нажатии*/
+
 .sorting-button > span {
   position: relative;
 }
@@ -1239,10 +1235,21 @@ input[type="checkbox"]:focus + label::before {
 .hotel-type {
   display: inline-block;
 
-  width: 116px;
+  min-width: 112px;
+  max-width: 112px;
+  margin-right: 4px;
 
   vertical-align: top;
 }
+
+.hotel-cost {
+  display: inline-block;
+
+  max-width: 144px;
+
+  vertical-align: top;
+}
+
 
 .hotel-link {
   color: #000;
@@ -1262,17 +1269,23 @@ input[type="checkbox"]:focus + label::before {
   font-size: 14px;
   line-height: 21px;
 
-  padding: 4px 17px 5px 17px;
+  display: inline-block;
+
+  padding: 3px 17px;
+
+  vertical-align: top;
 }
 
 .more-info {
   margin-right: 2px;
+  max-width: 78px;
 
   background: #81b3d2;
 }
 
 .reserve {
   background: #766357;
+  max-width: 110px;
 }
 
 .reserve:hover,
@@ -1297,6 +1310,8 @@ input[type="checkbox"]:focus + label::before {
 
 .hotel-rating {
   margin-left: auto;
+
+  flex-shrink: 0;
 }
 
 .hotel-rating span {
