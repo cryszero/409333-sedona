@@ -1,10 +1,21 @@
 var form = document.querySelector(".search-form");
 var link = document.querySelector(".form-call");
+var hotelSubmit = document.querySelector(".hotel-search-submit");
+var hotelSearch = document.querySelector(".hotel-search");
+
 var arrival = document.getElementById("arrival-date");
 var departure = document.getElementById("departure-date");
 var adults = document.getElementById("adults-input");
 var kids = document.getElementById("kids-input");
 
+if (hotelSearch && hotelSubmit) {
+hotelSubmit.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  hotelSearch.submit();
+});
+}
+
+if (link && form) {
 link.addEventListener("click", function(evt) {
   form.classList.toggle("form-animation");
   form.classList.toggle("form-hide");
@@ -12,7 +23,7 @@ link.addEventListener("click", function(evt) {
 });
 
 document.addEventListener("DOMContentLoaded", function(evt) {
-  document.querySelector(".search-form").classList.add("form-hide");
+  form.classList.add("form-hide");
 });
 
 form.addEventListener("submit", function(evt) {
@@ -26,6 +37,7 @@ form.addEventListener("submit", function(evt) {
     form.classList.remove("form-error");
   }
 });
+}
 
 function initMap() {
   var uluru = {lat: 34.869, lng: -111.760};

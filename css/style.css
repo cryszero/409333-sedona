@@ -87,11 +87,6 @@ a {
   margin-right: 8%;
 }
 
-.left-nav:nth-child(5n + 7),
-.right-nav:nth-child(5n + 7) {
-  text-align: center;
-}
-
 /*---------------------------*/
 
 /*Отрисовка баннера на главной*/
@@ -100,7 +95,7 @@ a {
   min-height: 508px;
   margin-bottom: 60px;
 
-  background: url(../img/banner-background-mask.png), url(../img/banner-background.jpg);
+  background: url(../img/banner-background-mask.png), #7895ae url(../img/banner-background.jpg);
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, 50% 21%;
   background-size: 100% 57px, auto auto;
@@ -326,7 +321,8 @@ a {
 }
 
 .gray-background .feature-clarification {
-  width: 279px;
+  max-width: 279px;
+  padding: 0 5px;
 }
 
 .short-introduction .feature-clarification {
@@ -1035,11 +1031,13 @@ input[type="checkbox"]:focus + label::before {
   line-height: 21px;
 
   display: block;
+  text-align: center;
 
   width: 137px;
   margin-right: 97px;
   margin-left: auto;
   padding: 6px 0;
+  width: 133px;
 
   text-transform: uppercase;
 
