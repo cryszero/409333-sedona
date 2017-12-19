@@ -1531,7 +1531,7 @@ input[type="checkbox"]:focus + label::before {
   background: url(../img/star-icon.svg);
 }
 
-@media (max-width=400px) {
+@media (max-width: 400px) {
   .feature-clarification {
     font-size: 17px;
   }
