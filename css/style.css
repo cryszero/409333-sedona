@@ -1071,8 +1071,10 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 input[type="checkbox"]:focus + label::before {
-  -webkit-box-shadow: -2px 5px 7px -3px white;
-          box-shadow: -2px 5px 7px -3px white;
+  /*-webkit-box-shadow: -2px 5px 7px -3px white;
+          box-shadow: -2px 5px 7px -3px white;*/
+  -webkit-filter: drop-shadow(0 0 3px #fff);
+    filter: drop-shadow(0 0 3px #fff);
 }
 
 .price-from-upto {
@@ -1532,7 +1534,9 @@ input[type="checkbox"]:focus + label::before {
 }
 
 @media (max-width: 400px) {
-  .feature-clarification {
+
+  body {
     font-size: 17px;
   }
+
 }
